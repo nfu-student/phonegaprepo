@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/themes/bob.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="home">
+
+        <!--header goes here-->
+        <div data-role="header">
+            <h1>Taiwan #1</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Women</li>
+                <li id="p1">
+                    <a href="#"><img src="images/16badminton.png" alt="Tai" class="ui-li-icon">Tai Tzu-ying
+                    </a>
+                </li>
+                <li id="p3">
+                    <a href="#"><img src="images/16weightlifting.png" alt="Kuo" class="ui-li-icon">Kuo Hsing-chun
+                    </a>
+                </li>
+                <li data-role="list-divider">Men</li>
+
+                <li id="p2">
+                    <a href="#"><img src="images/16tennis.png" alt="Jason" class="ui-li-icon">Jason Jung
+                    </a>
+                </li>
+                <li id="p4">
+                    <a href="#"><img src="images/16athletics.png" alt="Yang" class="ui-li-icon">Yang Chun-hang
+                    </a>
+                </li>
+                <li id="p5">
+                    <a href="#"><img src="images/16gymnastics.png" alt="Lee" class="ui-li-icon">Lee Chih-kai
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!--footer goes here-->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" id="xp1" class="ui-btn ui-icon-gear ui-btn-icon-top" data-corners="false">戴資穎</a></li>
+                    <li><a href="#" id="xp2" class="ui-btn ui-icon-bars ui-btn-icon-top" data-corners="false">莊吉生</a></li>
+                    <li><a href="#" id="xp3" class="ui-btn ui-icon-info ui-btn-icon-top" data-corners="false">郭婞淳</a></li>
+                    <li><a href="#" id="xp4" class="ui-btn ui-icon-cloud ui-btn-icon-top" data-corners="false">楊俊瀚</a></li>
+                    <li><a href="#" id="xp5" class="ui-btn ui-icon-grid ui-btn-icon-top" data-corners="false">李智凱</a></li>
+                </ul>
+            </div>
+            <h2>jQuery Mobile</h2>
+        </div>
+
+    </div>
+
+    <div data-role="page" id="page1">
+
+        <!--header goes here-->
+        <div data-role="header">
+            <h1>Taiwan #1</h1>
+            <a href="#home" data-transition="flip" data-direction="reverse" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div id="cont">
+                <!--jquery html function fill in content here-->
+            </div>
+        </div>
+
+        <!--footer goes here-->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" id="xp1" class="ui-btn ui-icon-gear ui-btn-icon-top" data-corners="false">戴資穎</a></li>
+                    <li><a href="#" id="xp2" class="ui-btn ui-icon-bars ui-btn-icon-top" data-corners="false">莊吉生</a></li>
+                    <li><a href="#" id="xp3" class="ui-btn ui-icon-info ui-btn-icon-top" data-corners="false">郭婞淳</a></li>
+                    <li><a href="#" id="xp4" class="ui-btn ui-icon-cloud ui-btn-icon-top" data-corners="false">楊俊瀚</a></li>
+                    <li><a href="#" id="xp5" class="ui-btn ui-icon-grid ui-btn-icon-top" data-corners="false">李智凱</a></li>
+                </ul>
+            </div>
+            <h2>jQuery Mobile</h2>
+        </div>
+
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+
+            var badmin = '<h2>Badminton</h2><img style="max-width: 100%;" src="images/Tai Tzu-ying.jpg"><p>Tai Tzu-ying (戴資穎) born on 20 June 1994 is a badminton player from Taiwan. In 2011, she won the title of Taiwanese ranking competition when she was only 16 years and 6 months old, becoming the youngest No. 1 in Taiwanese badminton history. She became world No. 1 in womens singles in December 2016, and has ranked No. 1 for 29 continuous weeks since then.</p>';
+
+            var tennis = '<h2>Tennis</h2><img style="max-width: 100%;" src="images/Jason Jung.jpg"><p>Jason Jung (莊吉生) born 15 June 1989) is an American-born professional tennis player who represents Chinese Taipei. He is a Michigan alumnus who has cracked the Top 200 in the ATP rankings and also won an ATP Challenger event. Jung played college tennis at the University of Michigan, where he majored in political science. As a tennis player, he was the National and Midwest Regional winner of the ITA/Arthur Ashe Award for Leadership & Sportsmanship in 2010, made the All Big Ten team as a junior and senior, and is 4th all-time in Michigan history in career doubles wins.</p>';
+
+            var athlet = '<h2>Athletics</h2><img style="max-width: 100%;" src="images/Yang Chun-han.jpg"><p>Yang Chun-han (楊俊瀚) born 1 January 1997 is a Taiwanese athlete of Amis descent specialising in sprinting events. He won two medals at the 2017 Asian Championships, gold in the 200 and bronze in the 100 metres. Yang won gold in the 100 metres at the 2017 Summer Universiade. He holds the national records in both the 100 and 200 metres.</p>';
+
+            var gymnast = '<h2>Gymnastics</h2><img style="max-width: 100%;" src="images/Lee Chih-kai.jpg"><p>Lee Chih-kai (李智凱) born April 3, 1996 is a Taiwanese male artistic gymnast, representing his nation in international competitions. He participated in two editions of the World Championships (2014 in Nanjing, China, and 2015 in Glasgow, Scotland), and qualified for the 2016 Summer Olympics, securing one of the spots available at the Olympic Test Event in Rio de Janeiro.</p>';
+
+            var weight = '<h2>Weightlifting</h2><img style="max-width: 100%;" src="images/Kuo Hsing-chun.jpg"><p>Kuo Hsing-chun (郭婞淳) born 26 November 1993 is a Taiwanese weightlifter of Amis descent. She placed sixth at the 2012 Summer Olympics in the womens 58 kg and won bronze at the 2016 Summer Olympics. Kuo won gold at the 2017 Summer Universiade and set a world record of 142 kg for the clean and jerk in her final lift. Following her performance at the Universiade, Kuo was awarded the Order of Brilliant Star.</p>';
+
+            $('#p1,#xp1').on('click', function() {
+                $.mobile.changePage("#page1");
+                $('#cont').html(badmin);
+            });
+            $('#p2,#xp2').on('click', function() {
+                $.mobile.changePage("#page1");
+                $('#cont').html(tennis);
+            });
+            $('#p3,#xp3').on('click', function() {
+                $.mobile.changePage("#page1");
+                $('#cont').html(weight);
+            });
+            $('#p4,#xp4').on('click', function() {
+                $.mobile.changePage("#page1");
+                $('#cont').html(athlet);
+            });
+            $('#p5,#xp5').on('click', function() {
+                $.mobile.changePage("#page1");
+                $('#cont').html(gymnas);
+            });
+
+        });
+
+    </script>
+
+</body>
