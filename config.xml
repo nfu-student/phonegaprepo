@@ -8,6 +8,8 @@
 		<name>2017 universaide</name>
 		<description>none</description>
 		<author href="" email="40527200nfu@gmail.com">bob</author>
+		<content src=”index.html” />
+		<access origin=”*” />
 		<feature name="http://api.phonegap.com/1.0/battery" />
 		<preference name="phonegap-version" value="cli-6.3.0" />
 		<preference name="android-build-tool" value="gradle" />
